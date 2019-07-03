@@ -93,7 +93,7 @@ var _reviewing4x = function(data, venueList, jobList, parentEl, svg_h, heading){
          .attr("transform", "translate(0,60)");
     svgEl.append("g")
          .attr("transform", "translate("+CVIS.TRACK_X+",54)")
-         .call(d3.axisTop(timeScale).tickValues([timeParser("2010"), timeParser("2015"), timeParser("2020")]).tickSizeOuter(0));
+         .call(d3.axisTop(timeScale).tickValues([timeParser("2016"), timeParser("2018"), timeParser("2020")]).tickSizeOuter(0));
 
     venueGs = d3.select("g#"+heading.toLowerCase())
                 .selectAll("g.venues")
