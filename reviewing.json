@@ -1,7 +1,7 @@
 {
 "books": [],
  "journals": [
-   {"name": "PFG-JPRSGS", "role": "Reviewer", "year": 2019, "type": "JREW1", "description": "PFG – Journal of Photogrammetry, Remote Sensing and Geoinformation Science", "url": "https://www.springer.com/earth+sciences+and+geography/geography/journal/41064"},
+   {"name": "PFG-JPRSGS", "role": "Reviewer", "year": 2019, "type": "JREW1", "description": "PFG – Journal of Photogrammetry, Remote Sensing and Geoinformation Science", "url": "https://www.springer.com/earth+sciences+and+geography/geography/journal/41064"}
  ],
  "conferences": [
      {"name": "ACCV", "role": "Reviewer", "year": 2018, "type": "CREW", "description": "14th Asian Conference on Computer Vision", "url": "http://accv2018.net"},
