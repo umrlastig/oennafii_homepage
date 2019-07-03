@@ -22,9 +22,9 @@
 
 const CVIS = {
     BOOK_LIST: ["Books"],
-    JOUR_LIST: ["IJGIS", "CaGIS", "TiGIS", "JOSIS", "IJGI", "IJC", "Carto", "Other GIS", "SpatialCog", "IEEE", "ISPRS"],
-    CONF_LIST: ["ICC", "GIScience", "GeneICA", "SAGEO", "ISPRS", "ISSDQ"],
-    TIME_INTERVAL: ["2006", "2021"],
+    JOUR_LIST: ["PFG-JPRSGS"],
+    CONF_LIST: ["ACCV", "CVPR", "JURSE", "BMVC"],
+    TIME_INTERVAL: ["2016", "2019"],
     SVG_W: 800,
     TITLE_Y: 26,
     CAPTION_X: 40,
@@ -38,9 +38,7 @@ const CVIS = {
 
 const LEGENDS = {
     journals: [
-        //{type: "JGED1", desc: "Guest Editor"},
         {type: "JREW1", desc: "Reviewer - 1 paper"},
-        //{type: "JGED2", desc: "Guest Editor"},
         {type: "JREW2", desc: "Reviewer - 2 papers"},
         {type: "JREW3", desc: "Reviewer - 3+ papers"},
         {type: "JGED3", desc: "Guest Editor"},
@@ -49,6 +47,7 @@ const LEGENDS = {
         {type: "CHAIR", desc: "Chair"},
         {type: "PCM", desc: "PC Member/Associate Chair"},
         {type: "CREW", desc: "Reviewer"},
+        {type: "SUB", desc: "Subreviewer"},
     ],
     books: [
         {type: "BED", desc: "Editor"},
