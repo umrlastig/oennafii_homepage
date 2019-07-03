@@ -21,7 +21,7 @@
 // THE SOFTWARE.
 
 const CVIS = {
-    JOUR_LIST: ["PFG-JPRSGS"],
+    JOUR_LIST: ["JPRSGS"],
     CONF_LIST: ["ACCV", "CVPR", "JURSE", "BMVC"],
     TIME_INTERVAL: ["2016", "2019"],
     SVG_W: 800,
@@ -39,12 +39,9 @@ const LEGENDS = {
     journals: [
         {type: "JREW1", desc: "Reviewer - 1 paper"},
         {type: "JREW2", desc: "Reviewer - 2 papers"},
-        {type: "JREW3", desc: "Reviewer - 3+ papers"},
-        {type: "JGED3", desc: "Guest Editor"}
+        {type: "JREW3", desc: "Reviewer - 3+ papers"}
     ],
     conferences: [
-        {type: "CHAIR", desc: "Chair"},
-        {type: "PCM", desc: "PC Member/Associate Chair"},
         {type: "CREW", desc: "Reviewer"},
         {type: "SUB", desc: "Subreviewer"}
     ]

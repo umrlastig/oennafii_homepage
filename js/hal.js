@@ -142,7 +142,7 @@ var getWorkshopPublicationsAuthor = function(halId){
   request.open('GET', url, true);
   //console.log(url);
 
-  var parentB = document.getElementById("pubW");
+  var parentW = document.getElementById("pubW");
 
   request.onload = function () {
     // Begin accessing JSON data here

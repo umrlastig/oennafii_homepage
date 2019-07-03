@@ -522,20 +522,14 @@ nav#filter a {
   Reviewing
 ============================ */
 
-.CREW, .BREW {
-    stroke: #9e9ac8;
-    stroke-width: 2px;
-    fill: #FFF;
-}
-
 .JREW1 {
-    stroke: #e5f5f9;
+    stroke: #99d8c9;
     stroke-width: 2px;
     fill: #FFF;
 }
 
 .JREW2 {
-    stroke: #99d8c9;
+    stroke: #2ca25f;
     stroke-width: 2px;
     fill: #FFF;
 }
@@ -543,34 +537,16 @@ nav#filter a {
 .JREW3 {
     stroke: #2ca25f;
     stroke-width: 2px;
-    fill: #FFF;
-}
-
-.JGED1 {
-    stroke: #e5f5f9;
-    stroke-width: 2px;
-    fill: #e5f5f9;
-}
-
-.JGED2 {
-    stroke: #99d8c9;
-    stroke-width: 2px;
-    fill: #99d8c9;
-}
-
-.JGED3 {
-    stroke: #2ca25f;
-    stroke-width: 2px;
     fill: #2ca25f;
 }
 
-.PCM, .BED {
+.CREW, .BED, .BREW {
     stroke: #9e9ac8;
     stroke-width: 2px;
     fill: #9e9ac8;
 }
 
-.CHAIR {
+.SUB {
     stroke: #6a51a3;
     stroke-width: 2px;
     fill: #6a51a3;
