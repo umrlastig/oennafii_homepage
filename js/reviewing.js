@@ -21,7 +21,6 @@
 // THE SOFTWARE.
 
 const CVIS = {
-    BOOK_LIST: ["Books"],
     JOUR_LIST: ["PFG-JPRSGS"],
     CONF_LIST: ["ACCV", "CVPR", "JURSE", "BMVC"],
     TIME_INTERVAL: ["2016", "2019"],
@@ -33,7 +32,7 @@ const CVIS = {
     TRACK_X: 110,
     CELL_SIZE: 12,
     CELL_STROKE: 2,
-    CELL_MARGIN: 2,
+    CELL_MARGIN: 2
 };
 
 const LEGENDS = {
@@ -41,18 +40,14 @@ const LEGENDS = {
         {type: "JREW1", desc: "Reviewer - 1 paper"},
         {type: "JREW2", desc: "Reviewer - 2 papers"},
         {type: "JREW3", desc: "Reviewer - 3+ papers"},
-        {type: "JGED3", desc: "Guest Editor"},
+        {type: "JGED3", desc: "Guest Editor"}
     ],
     conferences: [
         {type: "CHAIR", desc: "Chair"},
         {type: "PCM", desc: "PC Member/Associate Chair"},
         {type: "CREW", desc: "Reviewer"},
-        {type: "SUB", desc: "Subreviewer"},
-    ],
-    books: [
-        {type: "BED", desc: "Editor"},
-        {type: "BREW", desc: "Reviewer"},
-    ],
+        {type: "SUB", desc: "Subreviewer"}
+    ]
 };
 
 /* ---------------------------------- */
@@ -141,7 +136,6 @@ var reviewingVis = function(dataURL){
         function(data){
             _reviewing4x(data.journals, CVIS.JOUR_LIST, LEGENDS.journals, "#revj", 320, "Journals");
             _reviewing4x(data.conferences, CVIS.CONF_LIST, LEGENDS.conferences, "#revc", 280, "Conferences");
-            _reviewing4x(data.books, CVIS.BOOK_LIST, LEGENDS.books, "#revb", 110, "Books");
         }
     ).catch(function(err){console.log(err);});
 };
