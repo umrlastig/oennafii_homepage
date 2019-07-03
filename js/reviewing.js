@@ -131,7 +131,7 @@ var _reviewing4x = function(data, venueList, jobList, parentEl, svg_h, heading){
 var reviewingVis = function(dataURL){
     d3.json(dataURL).then(
         function(data){
-            _reviewing4x(data.journals, CVIS.JOUR_LIST, LEGENDS.journals, "#revj", 320, "Journals");
+            _reviewing4x(data.journals, CVIS.JOUR_LIST, LEGENDS.journals, "#revj", 110, "Journals");
             _reviewing4x(data.conferences, CVIS.CONF_LIST, LEGENDS.conferences, "#revc", 280, "Conferences");
         }
     ).catch(function(err){console.log(err);});
