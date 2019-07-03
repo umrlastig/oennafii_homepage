@@ -540,13 +540,13 @@ nav#filter a {
     fill: #2ca25f;
 }
 
-.CREW, .BED, .BREW {
+.SUB, .BED, .BREW {
     stroke: #9e9ac8;
     stroke-width: 2px;
     fill: #9e9ac8;
 }
 
-.SUB {
+.CREW {
     stroke: #6a51a3;
     stroke-width: 2px;
     fill: #6a51a3;
