@@ -1,0 +1,17 @@
+{
+    "name": "oennafii_lastig_homepage",
+    "version": "0.0.1a1",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/umrlastig/oennafii_homepage.git"
+    },
+    "license": "MIT",
+    "scripts": {
+        "test": "echo \"No test for now\" && exit 0"
+    },
+    "author": {
+        "name": "Oussama Ennafii",
+        "email": "oussama.ennafii@ign.fr"
+    }
+}
+  
