@@ -23,7 +23,7 @@
 const CVIS = {
     JOUR_LIST: ["JPRSGS"],
     CONF_LIST: ["ACCV", "CVPR", "JURSE", "BMVC"],
-    TIME_INTERVAL: ["2016", "2019"],
+    TIME_INTERVAL: ["2016", "2022"],
     SVG_W: 800,
     TITLE_Y: 26,
     CAPTION_X: 40,
