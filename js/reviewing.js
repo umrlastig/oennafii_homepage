@@ -23,7 +23,7 @@
 const CVIS = {
     JOUR_LIST: ["JPRSGS"],
     CONF_LIST: ["ACCV", "CVPR", "JURSE", "BMVC"],
-    TIME_INTERVAL: ["2016", "2022"],
+    TIME_INTERVAL: ["2014", "2022"],
     SVG_W: 800,
     TITLE_Y: 26,
     CAPTION_X: 40,
@@ -120,7 +120,7 @@ var _reviewing4x = function(data, venueList, jobList, parentEl, svg_h, heading){
       .attr("xlink:href", (d) => (d.url))
       .attr("xlink:title", (d) => (d.description))
       .append("rect")
-      .attr("x", (d) => (timeScale(timeParser(d.year))-(CVIS.CELL_SIZE)/2))
+      .attr("x", (d) => (timeScale(timeParser(d.year))-(CVIS.CELL_SIZE)))
       .attr("y", (d) => ((venueList.indexOf(d.name)+1)*CVIS.TRACK_HEIGHT-CVIS.CELL_SIZE))
       .attr("width", CVIS.CELL_SIZE)
       .attr("height", CVIS.CELL_SIZE)
