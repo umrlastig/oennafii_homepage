@@ -27,7 +27,7 @@ const CVIS = {
     SVG_W: 800,
     TITLE_Y: 26,
     CAPTION_X: 40,
-    TRACK_WIDTH: 300,
+    TRACK_WIDTH: 120,
     TRACK_HEIGHT: 18,
     TRACK_X: 110,
     CELL_SIZE: 12,
