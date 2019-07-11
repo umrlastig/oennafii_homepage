@@ -1,0 +1,21 @@
+\documentclass[tikz]{standalone}
+
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{fourier}
+
+\usepackage{standalone}
+
+\usepackage{tikz}
+\usetikzlibrary{decorations, 3d}
+
+
+\begin{document}  
+    \begin{tikzpicture}
+	\node at (0, 0) (errors) {\includestandalone[mode=buildnew, height=7cm]{building_errors}};
+
+        \path (errors.south east) node[align=left, anchor=north east] (errors_list) {\Large{\color{red}$\blacksquare$ Fidelity error}};
+        \path (errors_list.south east) node[align=left, anchor=north east] (east) {\Large{\color{blue}$\blacksquare$ Modeling error}};
+    \end{tikzpicture}
+\end{document}
+

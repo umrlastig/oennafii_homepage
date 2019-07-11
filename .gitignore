@@ -1,1 +1,8 @@
+# Git ignored files
+
+## Node modules
 node_modules
+
+# Intermediary binaries
+*.pdf
+*.gz
