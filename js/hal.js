@@ -35,6 +35,7 @@ var getAllPublicationsAuthor = function(halId){
     var parentJournal = document.getElementById("pubJ");
     var parentConference = document.getElementById("pubC");
     var parentBook = document.getElementById("pubB");
+    var parentThese = document.getElementById("pubT");
     var parentWorkshop = document.getElementById("pubW");
     var parentOther = document.getElementById("pubO");
 
@@ -101,15 +102,15 @@ var getConfPublicationsAuthor = function(halId){
     request.send();
 }
 
-var getBookPublicationsAuthor = function(halId){
+var getThesePublicationsAuthor = function(halId){
     // Create a request variable and assign a new XMLHttpRequest object to it.
     var request = new XMLHttpRequest();
 
     // Open a new connection, using the GET request on the URL endpoint
-    var url = "https://api.archives-ouvertes.fr/search/?q=authIdHal_s:%22" + halId + "%22&wt=json&fl=citationFull_s&fq=docType_s:\"COUV\"&fl=producedDateY_i,halId_s,fileMain_s&sort=producedDateY_i desc";
+    var url = "https://api.archives-ouvertes.fr/search/?q=authIdHal_s:%22" + halId + "%22&wt=json&fl=citationFull_s&fq=docType_s:\"THESE\"&fl=producedDateY_i,halId_s,fileMain_s&sort=producedDateY_i desc";
     request.open('GET', url, true);
 
-    var parentBook = document.getElementById("pubB");
+    var parentBook = document.getElementById("pubT");
 
     request.onload = function () {
         // Begin accessing JSON data here
@@ -118,32 +119,7 @@ var getBookPublicationsAuthor = function(halId){
         //console.log(data.response.docs);
         data.response.docs.forEach(docs => {
             // first create the list element with the citation
-            createPubHTML(docs, parentBook);
-        })
-    };
-
-    request.send();
-}
-
-
-var getWorkshopPublicationsAuthor = function(halId){
-    // Create a request variable and assign a new XMLHttpRequest object to it.
-    var request = new XMLHttpRequest();
-
-    // Open a new connection, using the GET request on the URL endpoint
-    var url = "https://api.archives-ouvertes.fr/search/?q=authIdHal_s:%22" + halId + "%22&wt=json&fl=citationFull_s&fq=docType_s:\"POSTER\"&fl=producedDateY_i,halId_s,docType_s,fileMain_s&sort=producedDateY_i desc";
-    request.open('GET', url, true);
-
-    var parentWorkshop = document.getElementById("pubW");
-
-    request.onload = function () {
-        // Begin accessing JSON data here
-        var data = JSON.parse(this.response);
-        //console.log(data.response);
-        //console.log(data.response.docs);
-        data.response.docs.forEach(docs => {
-            // first create the list element with the citation
-            createPubHTML(docs, parentBook);
+            createPubHTML(docs, parentThese);
         })
     };
 

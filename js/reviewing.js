@@ -21,7 +21,7 @@
 // THE SOFTWARE.
 
 const CVIS = {
-    JOUR_LIST: ["JPRSGS"],
+    JOUR_LIST: ["PFG"],
     CONF_LIST: ["ACCV", "CVPR", "JURSE", "BMVC"],
     TIME_INTERVAL: ["2015", "2021"],
     SVG_W: 800,
