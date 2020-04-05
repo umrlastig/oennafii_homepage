@@ -778,8 +778,8 @@ nav#filter a {
   width: 1em;
 }
 .flag-icon-fr {
-  background-image: url('../img/icons/fr.svg');
+  background-image: url('../img/icons/languages/fr.svg');
 }
 .flag-icon-us {
-  background-image: url('../img/icons/us.svg');
+  background-image: url('../img/icons/languages/us.svg');
 }
