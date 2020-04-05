@@ -22,7 +22,7 @@
 
 const CVIS = {
     JOUR_LIST: ["PFG"],
-    CONF_LIST: ["ACCV", "CVPR", "JURSE", "BMVC"],
+    CONF_LIST: ["ACCV", "CVPR", "JURSE", "BMVC", "ISPRS"],
     TIME_INTERVAL: ["2015", "2021"],
     SVG_W: 800,
     TITLE_Y: 26,
